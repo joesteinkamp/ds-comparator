@@ -1,0 +1,20 @@
+/* Polaris Isolation */
+[data-ds="polaris"] {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+}
+
+/* Scope Polaris CSS variables */
+[data-ds="polaris"] {
+  --p-color-bg-surface: #ffffff;
+  --p-color-bg-surface-hover: #f7f7f7;
+  --p-color-text: #202223;
+  --p-color-border: #c4cdd5;
+}
+
+[data-ds="polaris"].dark {
+  --p-color-bg-surface: #1a1a1a;
+  --p-color-text: #e3e3e3;
+}
+

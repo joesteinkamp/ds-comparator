@@ -1,0 +1,18 @@
+/* Carbon Isolation */
+[data-ds="carbon"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Scope Carbon CSS variables */
+[data-ds="carbon"] {
+  --cds-interactive-01: #0f62fe;
+  --cds-interactive-02: #393939;
+  --cds-ui-background: #ffffff;
+  --cds-text-01: #161616;
+}
+
+[data-ds="carbon"].dark {
+  --cds-ui-background: #161616;
+  --cds-text-01: #f4f4f4;
+}

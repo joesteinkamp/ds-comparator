@@ -1,0 +1,17 @@
+/* Microsoft Fluent UI Isolation */
+[data-ds="fluent"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Fluent uses CSS-in-JS with scoped tokens */
+[data-ds="fluent"] {
+  --colorBrandBackground: #0078d4;
+  --colorNeutralBackground1: #ffffff;
+  --colorNeutralForeground1: #242424;
+}
+
+[data-ds="fluent"].dark {
+  --colorNeutralBackground1: #292929;
+  --colorNeutralForeground1: #ffffff;
+}

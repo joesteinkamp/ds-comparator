@@ -1,0 +1,33 @@
+/* Ant Design Isolation */
+[data-ds="antd"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Scope Ant Design CSS variables */
+[data-ds="antd"] {
+  --ant-color-primary: #1677ff;
+  --ant-color-success: #52c41a;
+  --ant-color-warning: #faad14;
+  --ant-color-error: #ff4d4f;
+  --ant-color-info: #1677ff;
+  --ant-color-text-light-solid: #ffffff;
+  --ant-primary-color: #1677ff;
+  --ant-success-color: #52c41a;
+  --ant-warning-color: #faad14;
+  --ant-error-color: #ff4d4f;
+}
+
+/* Ensure Ant buttons render with correct primary styling */
+[data-ds="antd"] .ant-btn-primary {
+  background: #1677ff;
+  border-color: #1677ff;
+  color: #ffffff;
+}
+
+[data-ds="antd"] .ant-btn-primary:not(:disabled):hover,
+[data-ds="antd"] .ant-btn-primary:not(:disabled):focus {
+  background: #4096ff;
+  border-color: #4096ff;
+  color: #ffffff;
+}

@@ -1,0 +1,11 @@
+/* Lightning Isolation */
+[data-ds="lightning"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Scope Lightning CSS variables */
+[data-ds="lightning"] {
+  --slds-c-button-brand-color-background: #0176d3;
+  --slds-c-button-neutral-color-border: #c9c9c9;
+}

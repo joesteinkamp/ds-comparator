@@ -1,0 +1,17 @@
+/* Atlassian Isolation */
+[data-ds="atlaskit"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Scope Atlaskit CSS variables */
+[data-ds="atlaskit"] {
+  --ds-background-brand-bold: #0052cc;
+  --ds-text: #172b4d;
+  --ds-background-neutral: #ffffff;
+}
+
+[data-ds="atlaskit"].dark {
+  --ds-background-neutral: #1d2125;
+  --ds-text: #b6c2cf;
+}

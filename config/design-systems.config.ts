@@ -1,0 +1,86 @@
+import { DesignSystemMetadata } from '@/lib/types/design-systems';
+
+export const DESIGN_SYSTEMS: Record<string, DesignSystemMetadata> = {
+  shadcn: {
+    id: 'shadcn',
+    name: 'shadcn/ui',
+    description: 'Beautifully designed components built with Radix UI and Tailwind CSS',
+    primaryColor: '#000000',
+    website: 'https://ui.shadcn.com',
+    npmPackage: 'shadcn-ui',
+  },
+  mui: {
+    id: 'mui',
+    name: 'Material UI',
+    description: 'React components that implement Google\'s Material Design',
+    primaryColor: '#1976d2',
+    website: 'https://mui.com',
+    npmPackage: '@mui/material',
+  },
+  antd: {
+    id: 'antd',
+    name: 'Ant Design',
+    description: 'Enterprise-class UI design system for web applications',
+    primaryColor: '#1890ff',
+    website: 'https://ant.design',
+    npmPackage: 'antd',
+  },
+  chakra: {
+    id: 'chakra',
+    name: 'Chakra UI',
+    description: 'Simple, modular and accessible component library',
+    primaryColor: '#319795',
+    website: 'https://chakra-ui.com',
+    npmPackage: '@chakra-ui/react',
+  },
+  primer: {
+    id: 'primer',
+    name: 'Primer',
+    description: 'GitHub\'s design system and React components',
+    primaryColor: '#0969da',
+    website: 'https://primer.style/react',
+    npmPackage: '@primer/react',
+  },
+  polaris: {
+    id: 'polaris',
+    name: 'Polaris',
+    description: 'Shopify\'s design system for admin experiences',
+    primaryColor: '#008060',
+    website: 'https://polaris.shopify.com',
+    npmPackage: '@shopify/polaris',
+  },
+  carbon: {
+    id: 'carbon',
+    name: 'Carbon',
+    description: 'IBM\'s open source design system for digital products',
+    primaryColor: '#0f62fe',
+    website: 'https://carbondesignsystem.com',
+    npmPackage: '@carbon/react',
+  },
+  fluent: {
+    id: 'fluent',
+    name: 'Fluent',
+    description: 'Microsoft\'s cross-platform design system',
+    primaryColor: '#0078d4',
+    website: 'https://react.fluentui.dev',
+    npmPackage: '@fluentui/react-components',
+  },
+  lightning: {
+    id: 'lightning',
+    name: 'Lightning',
+    description: 'Salesforce\'s design system for enterprise experiences',
+    primaryColor: '#0176d3',
+    website: 'https://www.lightningdesignsystem.com',
+    npmPackage: '@salesforce/design-system-react',
+  },
+  atlaskit: {
+    id: 'atlaskit',
+    name: 'Atlassian',
+    description: 'Atlassian\'s official UI library for building products',
+    primaryColor: '#0052cc',
+    website: 'https://atlassian.design',
+    npmPackage: '@atlaskit/button',
+  },
+};
+
+export const DESIGN_SYSTEM_LIST = Object.values(DESIGN_SYSTEMS);

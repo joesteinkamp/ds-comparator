@@ -1,0 +1,15 @@
+/* shadcn/ui Isolation */
+[data-ds="shadcn"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* shadcn uses Tailwind and CSS variables from globals.css */
+[data-ds="shadcn"] {
+  /* Inherits from root CSS variables */
+}
+
+/* Ensure default shadcn button text stays readable in light mode. */
+[data-ds="shadcn"] [data-slot="button"][data-variant="default"] {
+  color: var(--primary-foreground);
+}

@@ -1,0 +1,13 @@
+/* Primer Isolation */
+[data-ds="primer"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Scope Primer CSS variables */
+[data-ds="primer"] {
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-danger-fg: #d1242f;
+  --color-success-fg: #1a7f37;
+}

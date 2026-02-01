@@ -1,0 +1,11 @@
+/* Chakra UI Isolation */
+[data-ds="chakra"] {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Chakra uses CSS-in-JS so minimal isolation needed */
+[data-ds="chakra"] .chakra-ui-light,
+[data-ds="chakra"] .chakra-ui-dark {
+  isolation: isolate;
+}
