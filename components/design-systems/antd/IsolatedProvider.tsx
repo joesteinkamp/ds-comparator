@@ -11,7 +11,7 @@ export function AntdIsolatedProvider({ children }: { children: React.ReactNode }
       <ConfigProvider
         theme={{
           algorithm: theme === 'dark' ? antdTheme.darkAlgorithm : antdTheme.defaultAlgorithm,
-          cssVar: true,
+          cssVar: { prefix: 'antd' },
           token: {
             colorPrimary: '#1677ff',
             colorInfo: '#1677ff',

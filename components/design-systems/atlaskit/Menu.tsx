@@ -4,7 +4,7 @@ import DropdownMenu, {
   DropdownItem,
   DropdownItemGroup,
 } from '@atlaskit/dropdown-menu';
-import { isValidElement } from 'react';
+import { isValidElement, type ReactNode } from 'react';
 import { UniversalMenuProps } from '@/lib/types/component-props';
 
 export default function Menu({
@@ -15,8 +15,8 @@ export default function Menu({
     if (typeof trigger === 'string' || typeof trigger === 'number') {
       return String(trigger);
     }
-    if (isValidElement(trigger)) {
-      const child = trigger.props?.children;
+    if (isValidElement<{ children?: ReactNode }>(trigger)) {
+      const child = trigger.props.children;
       if (typeof child === 'string' || typeof child === 'number') {
         return String(child);
       }
